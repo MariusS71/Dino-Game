@@ -1,10 +1,10 @@
 # Dino Game
 Saioc Marius-Andrei
 
-##Descriere
+## Descriere
 Rolul proiectului este implementarea unui joculet, Dino, dupa modelul lui Chrome Dino (Dinosaur Game), la nivel de Arduino, afisarea fiind efectuata pe un LCD 2X16.
 
-##Componente
+## Componente
 Ansamblul este format din:
 -Placa de Dezvoltare Compatibila cu Arduino UNO R3 (ATmega328p + ATmega16u2) 
 -LCD 1602 cu Interfata I2C
@@ -13,12 +13,12 @@ Ansamblul este format din:
 -Fire
 
 
-##Mod de ultilizare
+## Mod de ultilizare
 Jocul este controlat prin Joystick. Pentru a porni jocul (la inceput de rulare sau dupa game over) se foloseste directia sus a joystick-ului. Pe parcursul jocului folosim directia sus pentru jump si jos pentru crouch, cu scopul de a evita obstacolele.
 Aditional se poate folosi directia stanga pentru a pune pauza in orice moment al jocului, iar dreapta pentru a reveni dintr-o pauza.
 
 
-##Mod de functionare
+## Mod de functionare
 La prima rulare, se intra intr-o bucla care verifica pozitia joystick-ului pe verticala, asteptand pozitia sus pentru a porni jocul.
 In functia de loop fiecare obiect este tratat individual dupa cum urmeaza:
 
@@ -34,7 +34,7 @@ La intersectia obstacolelor cu dino, se verifica starea lui dino. La intersectia
 si va aparea ecranul de gameOver, jocul putand fi resetat de pe joystick sus.
 
 
-##Biblioteci folosite
+## Biblioteci folosite
 - Wire.h  		- permite comunicarea cu dipozitive I2C/TWI, LCD-ul avand interfata I2C
 - hd44780.h		- biblioteca open source, folosita pentru functiile de scriere pe LCD
 - hd44780ioClass/hd44780_I2Cexp.h   - biblioteca expander care adapteaza functiile la LCD cu interfata I2C
